@@ -1,5 +1,5 @@
 import './style.css';
-// import logo from '../../assets/images/logo.png'; 
+import logo from '../../assets/images/helppet-logo.svg'; 
 
 export default function Header() {
   
@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <header className="main-header">
       <div className="logo-container">
-        {/* <img src={logo} alt="Logo HelpPet" className="logo-img" /> */}
-        <h1 className="logo-text-fallback">HelpPet</h1>
+        <img src={logo} alt="Logo HelpPet" className="logo-img" />
+        {/* <h1 className="logo-text-fallback">HelpPet</h1> */}
       </div>
 
       <button className="back-button" onClick={goBack} aria-label="Voltar">
@@ -21,4 +21,5 @@ export default function Header() {
       </button>
     </header>
   );
+  
 }

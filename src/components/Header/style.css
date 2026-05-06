@@ -12,15 +12,16 @@
   height: 45px; /* Ajuste a altura conforme o tamanho real da sua imagem */
   width: auto;
 }
-
-/* Estilo quebra-galho caso você não tenha a imagem do logo agora */
+/* 
+Estilo quebra-galho caso você não tenha a imagem do logo agora
 .logo-text-fallback {
   font-size: 36px;
   font-weight: 800;
   color: #39C442;
-  -webkit-text-stroke: 2px #000; /* Bordinha preta do texto */
+  -webkit-text-stroke: 2px #000;
   margin: 0;
-}
+} 
+*/
 
 /* Botão de voltar transparente */
 .back-button {
