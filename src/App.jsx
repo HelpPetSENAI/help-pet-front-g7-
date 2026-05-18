@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     path: '/message',
     element: <MessagePageG6 />
   },
+  {
+    path: '/notification',
+    element: <MessagePageG6 />
+  }
 ])
 
 export default function App() {
