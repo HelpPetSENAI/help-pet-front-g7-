@@ -1,5 +1,7 @@
+// importando a função createGlobalStyle em chaves porque não é uma função export default
 import { createGlobalStyle } from "styled-components";
 
+// definindo o reset e variáveis globais normalmente
 const GlobalStyle = createGlobalStyle`
 
     * {
