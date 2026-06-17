@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { NotificationsContainer } from './NotificationPage.style'; 
-import Header from '../../components/Shared/Header/Header'
+import Header from '../../components/Shared/Header/Header';
 
 export default function Notifications() {
   const [activeTab, setActiveTab] = useState('sistema');
@@ -11,7 +11,7 @@ export default function Notifications() {
   const userId = "COLOQUE-UM-UUID-VALIDO-AQUI"; 
 
   // 🌐 SUA NOVA URL BASE DO AZURE
-  const BASE_URL = "https://testahelppet-notification.azurewebsites.net";
+  // const BASE_URL = "https://testahelppet-notification.azurewebsites.net";  
 
   useEffect(() => {
     fetchNotifications();
@@ -84,7 +84,7 @@ export default function Notifications() {
         <div className="tab-content active">
           <div className="content-header">
             <div className={`circle circle-${activeTab}`}></div>
-            <h3 style={{textTransform: 'capitalize'}}>{activeTab === 'adocao' ? 'Adoções' : activeTab}</h3>
+            <h3 style={{ textTransform: 'capitalize' }}>{activeTab === 'adocao' ? 'Adoções' : activeTab}</h3>
           </div>
           
           {currentTabNotifications.length > 0 ? (

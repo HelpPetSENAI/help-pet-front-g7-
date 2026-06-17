@@ -1,5 +1,5 @@
 import { MainHeader, LogoImg, BackButton } from './Header.style';
-import logoSrc from '../../assets/images/helppet-logo.svg'; 
+import logoSrc from '../../../assets/images/helppet-logo.svg'; 
 export default function Header() {
   return (
     <MainHeader>

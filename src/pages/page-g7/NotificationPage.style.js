@@ -6,6 +6,9 @@ export const NotificationsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  min-height: 100vh;
+  background-color: var(--clr-green-500);
+
 
   /* CONTAINER DAS ABAS */
   .tab-container {
@@ -81,17 +84,16 @@ export const NotificationsContainer = styled.div`
     background-color: #fff;
     width: 100%;
     flex-grow: 1; 
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     border: 2px solid #000;
-    border-bottom: none;
     padding: 40px;
   }
 
   .section-title {
     text-align: center;
+    margin-bottom: 40px;
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 40px;
     color: #000;
   }
 
@@ -113,7 +115,7 @@ export const NotificationsContainer = styled.div`
   /* CÍRCULOS E LISTAS */
   .content-header {
     display: flex;
-    align-items: center;
+    font-size: 40px;  
     padding-bottom: 15px;
     border-bottom: 1px solid #000;
     margin-bottom: 15px;

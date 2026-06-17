@@ -4,6 +4,7 @@ import NotFoundPage from './pages/NotFoundPage.jsx'
 import GlobalStyle from './styles/GlobalStyle.js'
 import ExamplePage from './pages/ExamplePage.jsx'
 import MessagePageG6 from './pages/page-g6/MessagePageG6.jsx'
+import MessagePageG7 from './pages/page-g7/NotificationsPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/notification',
-    element: <MessagePageG6 />
+    element: <MessagePageG7 />
   }
 ])
 
