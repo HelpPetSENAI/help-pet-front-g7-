@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { NotificationsContainer } from './NotificationPage.style'; 
-import Header from '../../components/Shared/Header/Header';
+// import Header from '../../components/Shared/Header/Header';
+import HeaderSideBar from '../../components/HeaderSideBar/HeaderSideBar';
 
 export default function Notifications() {
   const [activeTab, setActiveTab] = useState('sistema');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [notifications, setNotifications] = useState([]);
   
   // Substitua pelo ID real de um usuário do seu banco de dados
@@ -52,7 +54,8 @@ export default function Notifications() {
 
   return (
     <NotificationsContainer>
-      <Header />
+      {/* <Header /> */}
+      <HeaderSideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       {/* MENU DE ABAS */}
       <div className="tab-container">
         <button 
